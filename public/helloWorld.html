@@ -6,12 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>A Meaningful Page Title</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="Main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Main.js"></script>
 </head>
 
 <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    About Me
+                </a>
+
+                <a class="navbar-item">
+                    My Work
+                </a>
+
+                <a class="navbar-item">
+                    My Offer
+                </a>
+
+                <a class="navbar-item">
+                    Contact Me
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a>fr</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <section class="section">
-        <div class="container">
+        <div class="content">
             <h1 class="title">
                 Alexis Blouin
             </h1>
@@ -19,24 +59,21 @@
                 <i>Junior in title, <strong>impactful</strong> by nature.</i>
             </p>
 
-            <h3>My profession</h3>
-            <p>Developper</p>
+            <h3 class="title is-5">My profession</h3>
+            <p>Anything that contains developing and coding in the job description</p>
 
-            <h3>Me</h3>
+            <h3 class="title is-5">Me</h3>
             <p>
-                I’m a curious and adaptable junior developer with hands-on experience as both a hospital technician and
-                a
-                web developer at a research institute. I thrive on understanding how things work, which helps me build
-                better, smarter applications. From adding SQL abstraction to support database migration, to developing a
-                parking lot management system, and upgrading a time tracking app to a new framework, I’ve learned to be
-                self-sufficient and effective in any environment. I may be early in my career, but I aim to make a
-                strong impact on any team I join.
+                I'm a 21-year-old developer about to graduate from Université Laval with a Bachelor's degree in Computer
+                Science—and I already have nearly two years of hands-on experience under my belt!
             </p>
 
-            <p>Keep reading to see how I can bring value to your team.</p>
+            <p><strong>Keep reading to see how I can bring value to your team.</strong></p>
         </div>
-        <div class="container">
-            <h2>About me</h2>
+    </section>
+    <section class="section">
+        <div class="content">
+            <h2 class="title is-4">About me</h2>
             <p>
                 Hey there! I’m a passionate programmer who loves collaborating with teams and turning ideas into real,
                 functional software. I enjoy helping clients find creative, practical solutions—whether it's for the
@@ -44,7 +81,7 @@
                 projects forward.
             </p>
 
-            <h2>Background & Experience</h2>
+            <h3 class="subtitle is-5">Background & Experience</h3>
             <p>
                 I started out with an internship as a technician in a hospital, and for the past two years, I’ve been
                 working—first as an intern, now as a full team member—at a web development research institute. That
@@ -53,7 +90,7 @@
                 make it a point to be proactive and self-driven in solving problems.
             </p>
 
-            <h2>Highlight</h2>
+            <h3 class="subtitle is-5">Highlight</h3>
             <p>
                 I worked with Boston Dynamics’ Spot robot for a school project. The experience was very eye-opening—I
                 initially thought it would be simple, but it turned out to be much more complex. We faced development
@@ -62,7 +99,7 @@
                 sensor setup integrated with Grafana.
             </p>
 
-            <h2>Skills & Specialties</h2>
+            <h3 class="subtitle is-5">Skills & Specialties</h3>
             <p>
                 I thrive in collaborative environments and adapt quickly to new challenges. My strongest areas are web
                 development (especially with PHP, HTMX, jQuery, and Latte), along with solid experience in C#, C++,
@@ -72,18 +109,18 @@
         </div>
     </section>
     <section class="section">
-        <div class="container">
-            <h2>Here are some of my best works</h2>
+        <div class="content">
+            <h2 class="title is-4">Here are some of my best works</h2>
         </div>
     </section>
     <section class="section">
-        <div class="container">
-            <h2>What can I offer?</h2>
+        <div class="content">
+            <h2 class="title is-4">What can I offer?</h2>
         </div>
     </section>
     <section class="section">
-        <div class="container">
-            <h2>My links</h2>
+        <div class="content">
+            <h2 class="title is-4">My links</h2>
 
         </div>
     </section>
