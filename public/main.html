@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>A Meaningful Page Title</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    <link rel="stylesheet" href="Main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="Main.js"></script>
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide" defer></script>
+    <script type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
@@ -111,6 +112,17 @@
     <section class="section">
         <div class="content">
             <h2 class="title is-4">Here are some of my best works</h2>
+        </div>
+    </section>
+    <section class="hero is-medium has-carousel">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">0</li>
+                    <li class="glide__slide">1</li>
+                    <li class="glide__slide">2</li>
+                </ul>
+            </div>
         </div>
     </section>
     <section class="section">
