@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>A Meaningful Page Title</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="main.css">
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide" defer></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="main.js" defer></script>
 </head>
 
 <body>
@@ -112,17 +110,12 @@
     <section class="section">
         <div class="content">
             <h2 class="title is-4">Here are some of my best works</h2>
-        </div>
-    </section>
-    <section class="hero is-medium has-carousel">
-        <div class="glide">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    <li class="glide__slide">0</li>
-                    <li class="glide__slide">1</li>
-                    <li class="glide__slide">2</li>
-                </ul>
-            </div>
+            <button class="button js-modal-trigger" data-target="modal-spot">
+                <img class="modal-image" src="images/bchung-aira-2.jpg" alt="Italian Trulli">
+            </button>
+            <button class="button js-modal-trigger" data-target="modal-temp">
+                <img class="modal-image" src="images/momo_by_luxearte_dioebh7.jpg" alt="Italian Trulli">
+            </button>
         </div>
     </section>
     <section class="section">
@@ -136,6 +129,70 @@
 
         </div>
     </section>
+
+    <div id="modal-spot" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Modal title</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <p>
+                    I’ve worked with Spot robot in the fall semester of my college degree’s last year. We
+                    learned
+                    a
+                    lot during this project which only lasted about 6 weeks. We we able to experiment some new
+                    environment like docker to be able to push our programs to the dog. We also had to
+                    experiment
+                    data collection with a sensor and Grafana to display them. After the couple of weeks we had,
+                    here’s the final result :
+                </p>
+                <video width="740" height="360" controls>
+                    <source src="videos/IMG_2391.MOV" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>
+                    As you can see in the video, we don’t have any data collection. This for two main reasons :
+                    the task was way bigger than what we expected, so our goals where over what we could
+                    achieve; also, we suffered from teacher’s strikes which cost us some testing time that was
+                    very important as we were discovering the platform.
+                </p>
+            </section>
+            <footer class="modal-card-foot">
+                <div class="buttons">
+                    <button class="button is-link">Close</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div id="modal-temp" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Modal title</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <p>
+                    In my last college semester, I did a project to have a website showing the precipitation of the day
+                    or week with different charts and options. We did this work using Arduino to collect the data, MQTT
+                    to transfer them and PHP and MySQL to get the data from the MQTT broker. Finally I could display
+                    them with the help of the Chart,js library.
+                </p>
+                <video width="740" height="360" controls>
+                    <source src="videos/IMG_2391.MOV" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+            <footer class="modal-card-foot">
+                <div class="buttons">
+                    <button class="button is-link">Close</button>
+                </div>
+            </footer>
+        </div>
+    </div>
 </body>
 
 </html>
