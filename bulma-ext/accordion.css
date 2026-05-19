@@ -1,0 +1,222 @@
+/**
+ * Copyright 2026 - Marco Bignami
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * ---
+ * This file contains code originally derived from Bulma Extensions 
+ * Copyright (c) 2017 Wikiki (MIT License)
+ * Modified by Marco Bignami in 2026
+ */
+.accordions {
+  --accordion-header-background-color: var(--bulma-scheme-main-ter);
+  --accordion-panel-background-color: var(--bulma-background);
+  --accordion-panel-color: var(--bulma-text);
+  --accordion-header-color: var(--bulma-text);
+}
+.accordions .accordion:not(:last-child) {
+  margin-bottom: var(--bulma-block-spacing);
+}
+.accordions .accordion {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accordion-panel-background-color);
+  border-radius: var(--bulma-radius);
+  font-size: var(--bulma-size-normal);
+}
+.accordions .accordion strong {
+  color: currentColor;
+}
+.accordions .accordion a:not(.button):not(.tag) {
+  color: currentColor;
+  text-decoration: underline;
+}
+.accordions .accordion.is-small {
+  font-size: var(--bulma-size-small);
+}
+.accordions .accordion.is-medium {
+  font-size: var(--bulma-size-medium);
+}
+.accordions .accordion.is-large {
+  font-size: var(--bulma-size-large);
+}
+.accordions .accordion:not(:first-child) .accordion-header {
+  border-radius: 0;
+}
+.accordions .accordion:not(:last-child) {
+  margin-bottom: 0;
+}
+.accordions .accordion:not(:last-child) .accordion-content {
+  border-radius: 0;
+}
+.accordions .accordion .toggle,
+.accordions .accordion [data-action="toggle"] {
+  cursor: pointer;
+}
+.accordions .accordion .accordion-header {
+  align-items: center;
+  background-color: var(--accordion-header-background-color);
+  border-radius: var(--bulma-radius) var(--bulma-radius) 0 0;
+  color: var(--accordion-header-color);
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.25;
+  padding: 0.5em 0.75em;
+  position: relative;
+}
+.accordions .accordion .accordion-header .toggle {
+  appearance: none;
+  background-color: rgba(10, 10, 10, 0.2);
+  border: none;
+  border-radius: var(--bulma-radius-rounded);
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-left: 0.75em;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  position: relative;
+  vertical-align: top;
+  user-select: none;
+}
+.accordions .accordion .accordion-header .toggle::before {
+  color: var(--bulma-white);
+  display: flex;
+  inset: 0;
+  position: absolute;
+  content: "+";
+  line-height: 0;
+  justify-content: center;
+  align-items: center;
+}
+.accordions .accordion .accordion-header .toggle::after {
+  display: none;
+}
+.accordions .accordion .accordion-header + .accordion-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  color: var(--accordion-panel-color);
+  border-radius: var(--bulma-radius);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  transition: grid-template-rows 0.25s ease;
+}
+.accordions .accordion .accordion-header + .accordion-body .accordion-content {
+  min-height: 0;
+  padding: 0 1.25em;
+  transition: padding 0.25s ease;
+}
+.accordions
+  .accordion
+  .accordion-header
+  + .accordion-body
+  .accordion-content
+  code,
+.accordions
+  .accordion
+  .accordion-header
+  + .accordion-body
+  .accordion-content
+  pre {
+  background-color: var(--bulma-white);
+}
+.accordions
+  .accordion
+  .accordion-header
+  + .accordion-body
+  .accordion-content
+  pre
+  code {
+  background-color: transparent;
+}
+.accordions .accordion.is-active .accordion-header .toggle::before {
+  content: "-";
+}
+.accordions .accordion.is-active .accordion-body {
+  grid-template-rows: 1fr;
+  border: 1px solid var(--accordion-header-background-color);
+  border-top: none;
+}
+.accordions .accordion.is-active .accordion-body .accordion-content {
+  padding: 1em 1.25em;
+}
+.accordions .accordion.is-white {
+  --accordion-panel-background-color: var(--bulma-white-soft);
+  --accordion-panel-color: var(--bulma-white-soft-invert);
+  --accordion-header-background-color: var(--bulma-white);
+  --accordion-header-color: var(--bulma-white-invert);
+}
+.accordions .accordion.is-black {
+  --accordion-panel-background-color: var(--bulma-black-soft);
+  --accordion-panel-color: var(--bulma-black-soft-invert);
+  --accordion-header-background-color: var(--bulma-black);
+  --accordion-header-color: var(--bulma-black-invert);
+}
+.accordions .accordion.is-light {
+  --accordion-panel-background-color: var(--bulma-light-soft);
+  --accordion-panel-color: var(--bulma-light-soft-invert);
+  --accordion-header-background-color: var(--bulma-light);
+  --accordion-header-color: var(--bulma-light-invert);
+}
+.accordions .accordion.is-dark {
+  --accordion-panel-background-color: var(--bulma-dark-soft);
+  --accordion-panel-color: var(--bulma-dark-soft-invert);
+  --accordion-header-background-color: var(--bulma-dark);
+  --accordion-header-color: var(--bulma-dark-invert);
+}
+.accordions .accordion.is-text {
+  --accordion-panel-background-color: var(--bulma-text-soft);
+  --accordion-panel-color: var(--bulma-text-soft-invert);
+  --accordion-header-background-color: var(--bulma-text);
+  --accordion-header-color: var(--bulma-text-invert);
+}
+.accordions .accordion.is-primary {
+  --accordion-panel-background-color: var(--bulma-primary-soft);
+  --accordion-panel-color: var(--bulma-primary-soft-invert);
+  --accordion-header-background-color: var(--bulma-primary);
+  --accordion-header-color: var(--bulma-primary-invert);
+}
+.accordions .accordion.is-link {
+  --accordion-panel-background-color: var(--bulma-link-soft);
+  --accordion-panel-color: var(--bulma-link-soft-invert);
+  --accordion-header-background-color: var(--bulma-link);
+  --accordion-header-color: var(--bulma-link-invert);
+}
+.accordions .accordion.is-info {
+  --accordion-panel-background-color: var(--bulma-info-soft);
+  --accordion-panel-color: var(--bulma-info-soft-invert);
+  --accordion-header-background-color: var(--bulma-info);
+  --accordion-header-color: var(--bulma-info-invert);
+}
+.accordions .accordion.is-success {
+  --accordion-panel-background-color: var(--bulma-success-soft);
+  --accordion-panel-color: var(--bulma-success-soft-invert);
+  --accordion-header-background-color: var(--bulma-success);
+  --accordion-header-color: var(--bulma-success-invert);
+}
+.accordions .accordion.is-warning {
+  --accordion-panel-background-color: var(--bulma-warning-soft);
+  --accordion-panel-color: var(--bulma-warning-soft-invert);
+  --accordion-header-background-color: var(--bulma-warning);
+  --accordion-header-color: var(--bulma-warning-invert);
+}
+.accordions .accordion.is-danger {
+  --accordion-panel-background-color: var(--bulma-danger-soft);
+  --accordion-panel-color: var(--bulma-danger-soft-invert);
+  --accordion-header-background-color: var(--bulma-danger);
+  --accordion-header-color: var(--bulma-danger-invert);
+}
+
+/*# sourceMappingURL=accordion.css.map */
