@@ -1,3 +1,31 @@
 .navbar-burger {
   color: #ebecf0;
 }
+
+video.video {
+  max-height: 400px;
+  width: 100%;
+}
+
+/* img.image {
+  display: block;
+  max-height: 400px;
+  max-width: 100%;
+  width: auto;
+} */
+
+.image-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.image-row img {
+  max-height: 400px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  border-radius: 5px;
+}
