@@ -17,57 +17,54 @@ document.addEventListener("DOMContentLoaded", () => {
       $target.classList.toggle("is-active");
     });
   });
-});
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Functions to open and close a modal
-  function openModal($el) {
-    $el.classList.add("is-active");
-  }
+  // Loads the html files
+  fetch("intro.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("introSection").innerHTML = data;
+    })
+    .catch((error) => console.error("Error loading HTML:", error));
 
-  function closeModal($el) {
-    $el.classList.remove("is-active");
-  }
+  fetch("aboutMe.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("aboutMeSection").innerHTML = data;
+    })
+    .catch((error) => console.error("Error loading HTML:", error));
 
-  function closeAllModals() {
-    (document.querySelectorAll(".modal") || []).forEach(($modal) => {
-      closeModal($modal);
-    });
-  }
+  fetch("myProjects.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("myProjectsSection").innerHTML = data;
 
-  // Add a click event on buttons to open a specific modal
-  (document.querySelectorAll(".js-modal-trigger") || []).forEach(($trigger) => {
-    const modal = $trigger.dataset.target;
-    const $target = document.getElementById(modal);
+      // Adding the accordion and carousel listeners after the import
+      document
+        .querySelectorAll(".accordion")
+        .forEach((n) => new BulmaAccordion(n));
+      document.querySelectorAll(".slider").forEach((n) => new BulmaCarousel(n));
+    })
+    .catch((error) => console.error("Error loading HTML:", error));
 
-    $trigger.addEventListener("click", () => {
-      openModal($target);
-    });
-  });
+  fetch("myOffer.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("myOfferSection").innerHTML = data;
+    })
+    .catch((error) => console.error("Error loading HTML:", error));
 
-  // Add a click event on various child elements to close the parent modal
-  (
-    document.querySelectorAll(
-      ".modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button",
-    ) || []
-  ).forEach(($close) => {
-    const $target = $close.closest(".modal");
-
-    $close.addEventListener("click", () => {
-      closeModal($target);
-    });
-  });
-
-  // Add a keyboard event to close all modals
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-      closeAllModals();
-    }
-  });
+  fetch("links.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("linksSection").innerHTML = data;
+    })
+    .catch((error) => console.error("Error loading HTML:", error));
 });
 
 class BulmaAccordion {
   constructor(node) {
+    console.log("test");
+
     this.accordion = node;
     this.button = this.accordion.querySelector(".toggle");
     this.init();
@@ -80,10 +77,6 @@ class BulmaAccordion {
     this.accordion.classList.toggle("is-active");
   }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".accordion").forEach((n) => new BulmaAccordion(n));
-});
 
 class BulmaCarousel {
   constructor(node) {
@@ -133,7 +126,3 @@ class BulmaCarousel {
     }
   }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".slider").forEach((n) => new BulmaCarousel(n));
-});
