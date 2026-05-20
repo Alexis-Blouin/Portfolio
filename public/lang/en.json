@@ -1,0 +1,44 @@
+{
+  "header.about-me": "About Me",
+  "header.my-work": "My Work",
+  "header.my-offer": "My Offer",
+  "header.contact": "Contact Me",
+
+  "hero.sentence-1": "Junior in title, ",
+  "hero.sentence-2": "impactful",
+  "hero.sentence-3": " by nature.",
+
+  "intro.profession": "My profession",
+  "intro.profession.p": "I am a versatile developer/programmer with a passion for creating innovative solutions.",
+  "intro.me": "Me",
+  "intro.me.p": "I'm a 22-year-old developer who just graduated from Laval University with a Bachelor's degree in Computer Science—and I already have nearly two years of hands-on experience under my belt! I also have a DEC in computer science from CEGEP de Sept-Îles, which I completed in 2024. I’m fluent in both English and French, and I am learning Norwegian and Chinese. I’m a quick learner and a great communicator, and I’m always eager to take on new challenges and grow my skills.",
+  "intro.keep-reading": "Keep reading to see how I can bring value to your team.",
+
+  "about-me.about-me": "About Me",
+  "about-me.about-me.p": "Hey there! I’m a passionate programmer who loves collaborating with teams and turning ideas into real, functional software. I enjoy helping clients find creative, practical solutions—whether it's for the web, games, or custom software. I'm always curious and open to learning new tools or approaches to push projects forward.",
+  "about-me.background": "Background & Experiences",
+  "about-me.background.p": "I started out with an internship as a technician in a hospital, and for the past two years, I’ve been working—first as an intern, now as a full team member—at a web development research institute. That experience has given me a strong foundation not just in coding, but in identifying needs, proposing improvements, and building smart, helpful features. I like going the extra mile when time allows and make it a point to be proactive and self-driven in solving problems.",
+  "about-me.highlight": "Highlight",
+  "about-me.highlight.p": "I participated in an exchange semester in Norway at Norwegian University of Science and Technology. I had the opportunity to learn and apply new technologies with different teaching methods including OpenGL, Godot and Ethical Hacking.",
+  "about-me.skills": "Skills & Specialties",
+  "about-me.skills.p": "I worked mostly with PHP, PHP framework, JavaScript, MySQL and HTMX during my internships which allowed me to have very deep knowledge of those technologies. I also have a lot of experience with other languages and stacks with school and personal projects.",
+  "about-me.skills.team-collaboration": "Team  Collaboration",
+  "about-me.skills.leadership": "Leadership",
+  "about-me.skills.self-driven": "Self-driven",
+  "about-me.skills.resilience": "Resilience under pressure",
+  "about-me.skills.organization": "Organization",
+
+  "my-work.my-projects": "My projects",
+
+  "my-offer.my-offer": "What can I offer?",
+  "my-offer.skills": "Technical Skills",
+  "my-offer.skills.p": "I’m a developer with a solid toolkit and a team-first mindset. On the technical side, I’m comfortable with web development (PHP, HTMX, jQuery, Latte, and even Blazor), backend software work in C++, C#, Java, and Python, and building games—mainly in Unity, but I’m always open to picking up something new. I’ve worked on legacy app modernization and know my way around SQL databases like MySQL, MariaDB, SQL Server, and Oracle.",
+  "my-offer.collaboration": "Collaboration & Work Ethic",
+  "my-offer.collaboration.p": "In a team setting, I communicate clearly, work well with others, and take pride in being self-sufficient—I aim to understand a problem fully before asking for help. I also like to propose new ideas when I see opportunities to improve things. I’m quick to adapt to new workflows and environments, and I learn fast.",
+  "my-offer.deliver": "What will I deliver?",
+  "my-offer.deliver.p": "You can count on me to deliver clean, maintainable code, honest time estimates, and thoughtful input. I’m someone who stays motivated, looks ahead, and shows up ready to contribute every day.",
+
+  "links.contact-me": "Contact Me!",
+  "links.links": "Links",
+  "links.contact": "Contact"
+}

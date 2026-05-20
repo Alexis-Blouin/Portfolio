@@ -37,15 +37,40 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="#aboutMeSection"> About Me </a>
-          <a class="navbar-item" href="#myProjectsSection"> My Work </a>
-          <a class="navbar-item" href="#myOfferSection"> My Offer </a>
-          <a class="navbar-item" href="#linksSection"> Contact Me </a>
+          <a
+            data-i18n="header.about-me"
+            class="navbar-item"
+            href="#aboutMeSection"
+          >
+            About Me
+          </a>
+          <a
+            data-i18n="header.my-work"
+            class="navbar-item"
+            href="#myProjectsSection"
+          >
+            My Work
+          </a>
+          <a
+            data-i18n="header.my-offer"
+            class="navbar-item"
+            href="#myOfferSection"
+          >
+            My Offer
+          </a>
+          <a
+            data-i18n="header.contact"
+            class="navbar-item"
+            href="#linksSection"
+          >
+            Contact Me
+          </a>
         </div>
 
         <div class="navbar-end">
           <div class="navbar-item">
-            <a>fr</a>
+            <button onclick="setLanguage('en')">EN</button>
+            <button onclick="setLanguage('fr')">FR</button>
           </div>
         </div>
       </div>
@@ -55,7 +80,9 @@
       <div class="hero-body">
         <p class="title has-text-centered">Alexis Blouin</p>
         <p class="subtitle has-text-centered">
-          <i>Junior in title, <strong>impactful</strong> by nature.</i>
+          <i data-i18n="hero.sentence-1">Junior in title, </i>
+          <i><strong data-i18n="hero.sentence-2">impactful</strong></i>
+          <i data-i18n="hero.sentence-3"> by nature.</i>
         </p>
       </div>
     </section>

@@ -1,0 +1,44 @@
+{
+  "header.about-me": "À propos",
+  "header.my-work": "Mes projets",
+  "header.my-offer": "Mon offre",
+  "header.contact": "Contactez-moi",
+
+  "hero.sentence-1": "Junior dans le titre, ",
+  "hero.sentence-2": "impactant",
+  "hero.sentence-3": " de nature.",
+
+  "intro.profession": "Ma profession",
+  "intro.profession.p": "Je suis un développeur/programmeur versatile avec une passion pour créer des solutions innovantes.",
+  "intro.me": "Moi",
+  "intro.me.p": " J'ai 22 ans et récemment gradué de l'université Laval avec un Baccalauréat en informatique. J'ai également déjà presque deux ans d'expérience! Tout cela avec un DEC en technique de l'informatique au CEGEP de Sept-Îles, que j'ai complété en 2024. Je suis bilingue en français et en anglais, j'apprend également le norvégien et le chinois. J'apprend rapidement et j'ai de bonne compétence en communication, je suis toujours partant pour de nouveaux défis qui me permettront de grandir mes compétences.",
+  "intro.keep-reading": "Continuez votre lecture pour voir comment j'apporterai de la valeur à votre équipe.",
+
+  "about-me.about-me": "À propos de moi",
+  "about-me.about-me.p": "Salut toi! Je suis un passionné qui adore convertir les idées sur papier vers un produit exceptionnel et ce, tant en équipe qu'en mode autonome. Je souhaite permettre au client d'obtenir une solution à la fois créative et pratique. Je suis toujours currieux à en apprendre d'avantage sur des langages, outils ou approches pour amener les projets plus loins.",
+  "about-me.background": "Formations et expériences",
+  "about-me.background.p": "Durant mes années de formation au CEGEP et à l'université, j'ai eu la chance de faire différents stages. J'ai débuté par un stage en tant que technicien informatique au CISSS de la Côte-Nord. J'ai ensuite travaillé pendant presque 2 ans en tant que développeur fullstack pour l'Institut Technilogique de Maintenance Industrielle. J'en ai appris énormément sur le développement web et la collaboration en équipe, mais aussi en identification de besoin, analyse de code, proposition d'amélioration, etc. Cela me donne une excellente fondation sur laquelle je pourrai continuer de bâtir avec vos projets. J'aime aller plus loin pour surpasser les atentes du client.",
+  "about-me.highlight": "Point fort",
+  "about-me.highlight.p": "J'ai participé à un échange étudiant à la session d'automne 2025 en Norvège à la Norwegian University of Science and Technology. J'ai eu la chance d'apprendre et d'appliquer de nouvelles technologies avec de nouvelles méthodes d'enseignement. Les thèmes que j'ai couvert sont le jeux vidéo avec Godot, la programmation graphique ave OpenGL et l'ethical hacking.",
+  "about-me.skills": "Compétences",
+  "about-me.skills.p": "J'ai principalement travaillé avec PHP, un framework PHP, JavaScript, MySQL et HTMX durant mes stages ce qui m'a permis d'obtenir des connaissances avancées de ces technologies. J'ai également beacoup d'expériences avec d'autres langages et technologies que j'ai dévelopée avec mes projets personnel et d'école.",
+  "about-me.skills.team-collaboration": "Collaboration en équipe",
+  "about-me.skills.leadership": "Leadership",
+  "about-me.skills.self-driven": "Autonome",
+  "about-me.skills.resilience": "Résilient sous la pression",
+  "about-me.skills.organization": "Organisation",
+
+  "my-work.my-projects": "Mes projets",
+
+  "my-offer.my-offer": "Mon offre?",
+  "my-offer.skills": "Compétences techniques",
+  "my-offer.skills.p": "Je suis un développeur avec un coffre rempli d'outils maîtrisés. Du côté tchnique, je suis très confortable avec le développement web fullstack, que ce soit PHP, JavaScript, Blazor, React, Node.Js, etc. je suis prêt à relever le défis. J'ai également de l'epérience avec les langage C, C++, C#, Java, Python, etc. pour des logiciel. J'ai une maitrise avancée de SQL, principalement avec MySQL MariaDB, SQL Server et Oracle. J'ai finalement de l'expréience en développement de jeux vidéo avec Unity et Godot.",
+  "my-offer.collaboration": "Collaboration et éthique de travail",
+  "my-offer.collaboration.p": "Dans un environnement d'équipe, je communique clairmeent, collabore efficacement, mais je suis autant efficace seul où je me démarque par mon autonomie. Si j'ai besoin d'aide, je m'assure de comprendre pleinement le problème et d'avoir noté ce que j'ai déjà tenté. J'aime proposer des idées si je vois une opportunité d'amélioration. Je m'adapte rapidement aux nouveaux envirionnements et méthodes de travail, et j'apprends rapidement.",
+  "my-offer.deliver": "Que vais-je liver?",
+  "my-offer.deliver.p": "Vous pouvez compter sur moi pour livrer un produit propre et maintenable, des estimation de temps au meilleur de mes connaissances et des retours constructifs. Je suis toujours motivé et je me présente prêt à contribuer tous les jours.",
+
+  "links.contact-me": "Contactez-moi!",
+  "links.links": "Liens",
+  "links.contact": "Contact"
+}

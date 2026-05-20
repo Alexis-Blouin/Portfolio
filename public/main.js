@@ -1,3 +1,17 @@
+function setLanguage(lang) {
+  fetch("./lang/" + lang + ".json")
+    .then((response) => response.json())
+    .then((data) => {
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.getAttribute("data-i18n");
+        element.textContent = data[key];
+      });
+    })
+    .catch((error) => console.error("Error fetching JSON:", error));
+
+  localStorage.setItem("language", lang);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(
@@ -59,12 +73,14 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("linksSection").innerHTML = data;
     })
     .catch((error) => console.error("Error loading HTML:", error));
+
+  // Loads the saved language after all the content is loaded
+  const savedLanguage = localStorage.getItem("language") || "en";
+  setLanguage(savedLanguage);
 });
 
 class BulmaAccordion {
   constructor(node) {
-    console.log("test");
-
     this.accordion = node;
     this.button = this.accordion.querySelector(".toggle");
     this.init();
