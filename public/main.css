@@ -21,7 +21,7 @@ video.video {
 .image-row {
   height: 100%;
   display: flex;
-  gap: 1rem;
+  gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -39,12 +39,12 @@ video.video {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .image-column img,
 .image-column video {
-  max-height: 400px;
+  max-height: 192px;
   max-width: 100%;
   height: auto;
   width: auto;
