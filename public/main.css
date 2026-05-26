@@ -34,3 +34,19 @@ video.video {
   width: auto;
   border-radius: 5px;
 }
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image-column img,
+.image-column video {
+  max-height: 400px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  border-radius: 5px;
+}
