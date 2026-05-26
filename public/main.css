@@ -23,7 +23,6 @@ video.video {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  align-items: flex-start;
   flex-wrap: wrap;
 }
 
