@@ -14,7 +14,12 @@ video.video {
   width: auto;
 } */
 
+.image-grid {
+  height: 100%;
+}
+
 .image-row {
+  height: 100%;
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -22,7 +27,8 @@ video.video {
   flex-wrap: wrap;
 }
 
-.image-row img {
+.image-row img,
+.image-row video {
   max-height: 400px;
   max-width: 100%;
   height: auto;

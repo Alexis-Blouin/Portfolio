@@ -52,11 +52,32 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       document.getElementById("myProjectsSection").innerHTML = data;
 
-      // Adding the accordion and carousel listeners after the import
-      document
-        .querySelectorAll(".accordion")
-        .forEach((n) => new BulmaAccordion(n));
-      document.querySelectorAll(".slider").forEach((n) => new BulmaCarousel(n));
+      // Loading the projects content
+      const projects = {
+        spotRobotProject: "spotRobot.html",
+        weatherStationProject: "weatherStation.html",
+        chineseLearningAppProject: "chineseLearningApp.html",
+        wallpaperApplicationProject: "wallpaperApplication.html",
+        dungeonCrawlerProject: "dungeonCrawler.html",
+        tetrisGameProject: "tetrisGame.html",
+        cncMachineSoftwareProject: "cncMachineSoftware.html",
+        roboticPlatformProject: "roboticPlatform.html",
+      };
+      for (const key in projects) {
+        fetch("projects/" + projects[key])
+          .then((response) => response.text())
+          .then((data) => {
+            const container = document.getElementById(key);
+            container.innerHTML = data;
+
+            // Adding the accordion and carousel listeners after the import
+            new BulmaAccordion(container);
+            container
+              .querySelectorAll(".slider")
+              .forEach((n) => new BulmaCarousel(n));
+          })
+          .catch((error) => console.error("Error loading HTML:", error));
+      }
     })
     .catch((error) => console.error("Error loading HTML:", error));
 
